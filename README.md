@@ -15,12 +15,12 @@ The primary focus is on face masks and black sunglasses as they occlude distinct
 ## Pipeline Workflow
 
 1) Data Collection
-    Occluded and non-occluded images are captured using a PrimeSense Carmine 1.09 RGB-depth camera.
+    - Occluded and non-occluded images are captured using a PrimeSense Carmine 1.09 RGB-depth camera.
 
 2) Data Conversion
-    Video streams from the depth and color images are converted into numpy arrays.
-    Four frames are collected for each scenario: color and depth frames for both occluded and non-occluded images.
-    Depth and colour images are are either considered as distinct 2D images for the same frame, or as one 3D point cloud. 
+    - Video streams from the depth and color images are converted into numpy arrays.
+    - Four frames are collected for each scenario: color and depth frames for both occluded and non-occluded images.
+    - Depth and colour images are are either considered as distinct 2D images for the same frame, or as one 3D point cloud. 
 
 4) Image Registration
     Images are registered using depth information via the Iterative Closest Point (ICP) algorithm or similar techniques.
